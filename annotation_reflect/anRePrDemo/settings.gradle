@@ -1,0 +1,6 @@
+include ':retrofitdemo'
+include ':proxyDemo'
+include ':reflectDemo'
+include ':aptlib'
+include ':app'
+rootProject.name = "anRePrDemo"
