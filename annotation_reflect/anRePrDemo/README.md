@@ -1,4 +1,4 @@
-![](https://cdn.lishaoy.net/annotations-reflect/annotations-reflect-proxy1.png)
+![](https://cdn.lishaoy.net/annotations-reflect/annotations-reflect-proxy2.png)
 
 # Android coder 需要理解的注解、反射和动态代理
 
