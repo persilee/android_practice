@@ -1,0 +1,3 @@
+include ':threadDemo'
+include ':app'
+rootProject.name = "concurrentDemo"
