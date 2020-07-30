@@ -1,4 +1,4 @@
-package net.lishaoy.threaddemo;
+package net.lishaoy.threaddemo.thread;
 
 class InterruptRunnable {
 

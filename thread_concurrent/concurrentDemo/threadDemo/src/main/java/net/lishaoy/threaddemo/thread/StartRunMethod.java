@@ -1,4 +1,4 @@
-package net.lishaoy.threaddemo;
+package net.lishaoy.threaddemo.thread;
 
 import java.util.concurrent.TimeUnit;
 
