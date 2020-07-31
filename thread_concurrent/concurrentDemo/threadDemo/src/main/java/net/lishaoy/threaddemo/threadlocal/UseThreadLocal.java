@@ -1,6 +1,4 @@
-package net.lishaoy.threaddemo.synchronization;
-
-import java.util.concurrent.locks.Lock;
+package net.lishaoy.threaddemo.threadlocal;
 
 class UseThreadLocal {
 
@@ -12,6 +10,7 @@ class UseThreadLocal {
             return 0;
         }
     };
+    //static MyThreadLocal<Integer> count = new MyThreadLocal<>();
 
     // 启动 3 个线程
     public void StartThread() {
@@ -39,7 +38,8 @@ class UseThreadLocal {
             Integer integer = count.get(); // 获取 ThreadLocal 里的值
             integer = integer + id;
             count.set(integer); // 如果下次还有使用，需要 set 值
-            System.out.println(Thread.currentThread().getName() + " count " + integer);
+//            count.set(id);
+            System.out.println(Thread.currentThread().getName() + " count " + id);
         }
     }
 
