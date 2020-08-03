@@ -1,8 +1,12 @@
-# Android 日常小练习
+# Android文章合集及日常小练习
+
+### [序列化、json解析(serializable/serializableDemo)](https://github.com/persilee/android_practice/tree/master/serializable/serializableDemo)
+
+博客文章地址：[解读Android中的序列化与Json解析](https://h.lishaoy.net/serializable.html)
 
 ### [并发编程(thread_concurrent/concurrentDemo)](https://github.com/persilee/android_practice/tree/master/thread_concurrent/concurrentDemo)
 
-博客文章地址：[Android coder 并发编程你了解多少](https://h.lishaoy.net/thread-concurrent.html)
+博客文章地址：[Android并发编程你了解多少](https://h.lishaoy.net/thread-concurrent.html)
 
 ### [注解、反射、动态代理(annotation_reflect/anRePrDemo)](https://github.com/persilee/android_practice/tree/master/annotation_reflect/anRePrDemo)
 
