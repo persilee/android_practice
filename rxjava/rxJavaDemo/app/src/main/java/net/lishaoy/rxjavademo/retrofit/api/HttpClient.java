@@ -11,17 +11,18 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class HttpClient {
-
+    // api 的 base url
     public static String BASE_URL = "https://www.wanandroid.com/";
 
     public static void setBaseUrl(String baseUrl) {
         BASE_URL = baseUrl;
     }
 
+    // 创建 Retrofit
     public static Retrofit getRetrofit() {
-
+        // 创建 OkHttp 客户端
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
-
+        // 配置参数
         OkHttpClient httpClient = builder.addNetworkInterceptor(new StethoInterceptor())
                 .readTimeout(6666, TimeUnit.SECONDS)
                 .connectTimeout(6666, TimeUnit.SECONDS)
@@ -29,9 +30,9 @@ public class HttpClient {
                 .build();
 
         return new Retrofit.Builder().baseUrl(BASE_URL)
-                .client(httpClient)
-                .addConverterFactory(GsonConverterFactory.create(new Gson()))
-                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .client(httpClient) // 使用 OkHttp 访问网络
+                .addConverterFactory(GsonConverterFactory.create(new Gson())) // 设置 json 解析工具
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create()) // 设置 rxjava
                 .build();
     }
 

@@ -15,11 +15,18 @@
         android:onClick="getProject" />
 
     <Button
+        android:id="@+id/get_item_button_fd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get Item data(no flatMap)"
+        android:layout_marginTop="6dp" />
+
+    <Button
         android:id="@+id/get_item_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="get Item data"
-        android:layout_marginTop="6dp"/>
+        android:layout_marginTop="6dp" />
 
     <ScrollView
         android:layout_width="match_parent"
