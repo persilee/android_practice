@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private ImageView imageView;
     private final static String URL = "https://cdn.lishaoy.net/image/112131.jpg";
+    private Disposable disposable;
     private final Handler handler = new Handler(new Handler.Callback() {
         @Override
         public boolean handleMessage(@NonNull Message msg) {
@@ -126,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onSubscribe(Disposable d) {
                         loading = ProgressDialog.show(MainActivity.this, "", "loading");
+                        disposable = d;
                     }
 
                     // onNext() 在发送事件之后执行
@@ -149,5 +151,11 @@ public class MainActivity extends AppCompatActivity {
     public void toRetrofit(View view) {
         Intent intent = new Intent(this, RetrofitActivity.class);
         startActivity(intent);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        disposable.dispose();
     }
 }
