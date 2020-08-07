@@ -1,5 +1,7 @@
 package net.lishaoy.userxjava;
 
+import java.io.InputStream;
+
 import io.reactivex.rxjava3.annotations.NonNull;
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.core.ObservableEmitter;
@@ -13,6 +15,7 @@ import io.reactivex.rxjava3.plugins.RxJavaPlugins;
 public class UseRxJava {
 
     public static void main(String[] args) {
+        Disposable disposable;
         // hook 钩子函数
         RxJavaPlugins.setOnObservableAssembly(new Function<Observable, Observable>() {
             @Override
@@ -34,6 +37,7 @@ public class UseRxJava {
                         System.out.println(o);
                     }
                 });
+
         // 创建 Observable 被观察者
         Observable observable = Observable.create(new ObservableOnSubscribe<String>() {
             @Override
@@ -45,6 +49,11 @@ public class UseRxJava {
                 emitter.onComplete();
                 emitter.onComplete();
                 emitter.onNext("🍊 加急进货中...");
+            }
+        }).map(new Function<String, String>() {
+            @Override
+            public String apply(String s) throws Throwable {
+                return s + " map ";
             }
         });
 

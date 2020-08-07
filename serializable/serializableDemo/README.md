@@ -2,7 +2,7 @@
 
 # 解读Android中的序列化与Json解析
 
-文章链接：[https://h.lishaoy.net/serializable.htmll](https://h.lishaoy.net/serializable.html)
+文章链接：[https://h.lishaoy.net/serializable.html](https://h.lishaoy.net/serializable.html)
 
 知识点脑图，如图：
 

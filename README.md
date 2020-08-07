@@ -1,5 +1,11 @@
 # Android文章合集及日常小练习
 
+### [RxJava 响应式编程(serializable/serializableDemo)](https://github.com/persilee/android_practice/tree/master/rxjava/rxJavaDemo)
+
+博客文章地址：[Android响应式编程之RxJava](https://h.lishaoy.net/rxjava.html)
+
+<hr />
+
 ### [序列化、json解析(serializable/serializableDemo)](https://github.com/persilee/android_practice/tree/master/serializable/serializableDemo)
 
 博客文章地址：[解读Android中的序列化与Json解析](https://h.lishaoy.net/serializable.html)
