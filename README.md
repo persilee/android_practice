@@ -1,4 +1,4 @@
-# Android文章合集及日常小练习
+# Android文章合集
 
 ### [RxJava 响应式编程(serializable/serializableDemo)](https://github.com/persilee/android_practice/tree/master/rxjava/rxJavaDemo)
 
