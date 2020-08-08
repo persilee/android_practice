@@ -4,6 +4,6 @@
 
 文章链接：[https://h.lishaoy.net/rxjava.html](https://h.lishaoy.net/rxjava.html)
 
-知识点脑图，如图：
+RxJava操作符大全，如图：
 
-![](https://cdn.lishaoy.net/rxjava/rxjava_cover.png)
+![](https://cdn.lishaoy.net/rxjava/rxjava.png)
