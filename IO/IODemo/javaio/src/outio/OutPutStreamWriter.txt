@@ -1,0 +1,6 @@
+
+this is writer
+this is writerGBK
+this is writer
+this is writerGBK
+this is writerUTF8
