@@ -49,6 +49,7 @@
             android:scaleY="0.8"/>
 
         <EditText
+            android:id="@+id/user_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@null"
@@ -74,6 +75,7 @@
             android:src="@drawable/login_user_password_icon" />
 
         <EditText
+            android:id="@+id/user_pwd"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -91,6 +93,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/login_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="12dp"
