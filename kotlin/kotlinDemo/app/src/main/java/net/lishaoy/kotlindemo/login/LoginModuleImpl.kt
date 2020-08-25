@@ -1,7 +1,6 @@
 package net.lishaoy.kotlindemo.login
 
 import android.content.Context
-import android.widget.Toast
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import net.lishaoy.kotlindemo.api.Api

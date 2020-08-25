@@ -1,5 +1,6 @@
 package net.lishaoy.kotlindemo.login
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -8,6 +9,7 @@ import com.gyf.immersionbar.ImmersionBar
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_login.*
+import net.lishaoy.kotlindemo.MainActivity
 import net.lishaoy.kotlindemo.R
 import net.lishaoy.kotlindemo.api.Api
 import net.lishaoy.kotlindemo.base.BaseActivity
@@ -46,6 +48,8 @@ class LoginActivity : BaseActivity<LoginPresenter>(), LoginView {
 
     override fun loginSuccess(loginData: LoginData?) {
         Toast.makeText(this@LoginActivity, "登录成功", Toast.LENGTH_SHORT).show()
+        val intent: Intent = Intent(this@LoginActivity, MainActivity::class.java)
+        startActivity(intent)
     }
 
     override fun loginFailure(errorMsg: String?) {
