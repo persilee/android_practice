@@ -1,18 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="6dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="水果"
+        android:textSize="36dp"
+        android:layout_marginBottom="12dp"
+        android:padding="6dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <net.lishaoy.constomviewdemo.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:text="🍐 梨子"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:text="🍊 橘子"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:text="🍋 柠檬"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:text="🍉 西瓜"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:text="🍇 葡萄"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+    </net.lishaoy.constomviewdemo.FlowLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="蔬菜"
+        android:textSize="36dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:padding="6dp"/>
+
+    <net.lishaoy.constomviewdemo.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:text="🍅 番茄"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:text="🍆 茄子"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:text="🥒 黄瓜"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:text="🥕 胡萝卜"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:text="🥦 西蓝花"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+    </net.lishaoy.constomviewdemo.FlowLayout>
+
+</LinearLayout>
