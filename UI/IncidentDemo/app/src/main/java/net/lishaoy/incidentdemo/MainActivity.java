@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ViewPager viewPager;
+    private MyViewPager viewPager;
     private int[] images = new int[]{
             R.mipmap.image1,
             R.mipmap.image2,

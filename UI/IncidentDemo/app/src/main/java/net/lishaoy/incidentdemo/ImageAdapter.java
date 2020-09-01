@@ -3,7 +3,6 @@ package net.lishaoy.incidentdemo;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import androidx.annotation.NonNull;
@@ -31,7 +30,7 @@ public class ImageAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
         View view = View.inflate(context, R.layout.item_image, null);
-        ListView listView = view.findViewById(R.id.image_item);
+        MyListView listView = view.findViewById(R.id.image_item);
         listView.setAdapter(new SimpleAdapter(container.getContext(), list, R.layout.item_base, new String[]{"key"}, new int[]{R.id.image}));
         container.addView(view);
         return view;
