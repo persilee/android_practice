@@ -33,12 +33,19 @@ public class MainActivity extends AppCompatActivity {
         arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, s);
         listView.setAdapter(arrayAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            private Intent intent;
+
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.i(TAG, "onClick: " + position);
                 switch (position) {
                     case 0 :
-                        Intent intent = new Intent(MainActivity.this, TextDrawActivity.class);
+                        intent = new Intent(MainActivity.this, TextDrawActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 1 :
+                        intent = new Intent(MainActivity.this, ViewPagerActivity.class);
                         startActivity(intent);
                         break;
                 }
