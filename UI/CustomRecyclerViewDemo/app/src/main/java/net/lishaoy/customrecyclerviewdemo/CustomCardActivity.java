@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import net.lishaoy.customrecyclerviewdemo.adapter.CardAdapter;
+import net.lishaoy.customrecyclerviewdemo.adapter.CustomCardLayoutManager;
 import net.lishaoy.customrecyclerviewdemo.adapter.GeneralAdapter;
 import net.lishaoy.customrecyclerviewdemo.adapter.RecyclerAdapter;
 import net.lishaoy.customrecyclerviewdemo.adapter.ViewHolder;
@@ -26,7 +27,7 @@ public class CustomCardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_custom_card);
 
         recyclerView = findViewById(R.id.custom_card);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new CustomCardLayoutManager());
 
         cardBeans = CardBean.getCardData();
 

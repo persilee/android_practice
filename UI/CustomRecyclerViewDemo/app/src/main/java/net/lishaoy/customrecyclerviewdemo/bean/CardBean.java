@@ -56,7 +56,7 @@ public class CardBean {
                 R.mipmap.bg8
         };
         for (int i = 0; i < resources.length; i++) {
-            cardBeans.add(new CardBean(i + 1, resources[i], "card" + i + 1));
+            cardBeans.add(new CardBean(i + 1, resources[i], "card" + (i + 1)));
         }
 
         return cardBeans;
