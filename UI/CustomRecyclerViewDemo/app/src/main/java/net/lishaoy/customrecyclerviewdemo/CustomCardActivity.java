@@ -1,12 +1,14 @@
 package net.lishaoy.customrecyclerviewdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
 import net.lishaoy.customrecyclerviewdemo.adapter.CardAdapter;
+import net.lishaoy.customrecyclerviewdemo.adapter.CardCallback;
 import net.lishaoy.customrecyclerviewdemo.adapter.CustomCardLayoutManager;
 import net.lishaoy.customrecyclerviewdemo.adapter.GeneralAdapter;
 import net.lishaoy.customrecyclerviewdemo.adapter.RecyclerAdapter;
@@ -41,6 +43,10 @@ public class CustomCardActivity extends AppCompatActivity {
         };
 
         recyclerView.setAdapter(adapter);
+
+        CardCallback cardCallback = new CardCallback(recyclerView, adapter, cardBeans);
+        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(cardCallback);
+        itemTouchHelper.attachToRecyclerView(recyclerView);
 
     }
 }
