@@ -77,7 +77,8 @@ public class CustomRecyclerItem extends RecyclerView.ItemDecoration {
                 c.drawRect(left, top, right, top + bottom, titlePaint);
                 String title = adapter.getGroup(position);
                 titlePaint.getTextBounds(title, 0, title.length(), textRect);
-                c.drawText(title, left + 66, top + titleHeight / 2 + textRect.height() / 2 + bottom, titlePaint);
+                c.clipRect(left, top, right, top + bottom); //
+                c.drawText(title, left + 66, top + bottom - titleHeight / 2 + textRect.height() / 2 + bottom, titlePaint);
             } else {
                 c.drawRect(left, top, right, top + titleHeight, titlePaint);
                 String title = adapter.getGroup(position);
