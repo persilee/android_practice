@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_item1"
+        android:title="album"
+        android:icon="@drawable/ic_baseline_album_24" />
+
+    <item android:id="@+id/menu_item2"
+        android:title="chart"
+        android:icon="@drawable/ic_baseline_bar_chart_24" />
+
+    <item android:id="@+id/menu_item3"
+        android:title="favorite"
+        android:icon="@drawable/ic_baseline_favorite_24" />
+
+    <item android:id="@+id/menu_item4"
+        android:title="beach"
+        android:icon="@drawable/ic_baseline_beach_access_24" />
+
+</menu>
