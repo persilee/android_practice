@@ -42,8 +42,9 @@ public class MainActivity extends AppCompatActivity {
         fragments.add(MyFragment.newInstance("chart"));
         fragments.add(MyFragment.newInstance("favorite"));
         fragments.add(MyFragment.newInstance("beach"));
-        adapter = new MyAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT, fragments);
+        adapter = new MyAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_SET_USER_VISIBLE_HINT, fragments);
         viewPager.setAdapter(adapter);
+        viewPager.setOffscreenPageLimit(1);
         viewPager.setOnPageChangeListener(pageChangeListener);
 
     }
