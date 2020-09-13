@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MaterialDesignDemo</string>
+    <string name="search">search</string>
+    <string name="more">more</string>
 </resources>

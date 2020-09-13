@@ -4,6 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".appbars.BottomAppBarActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="100dp"
+            android:clipToPadding="false">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bottom_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"
+            app:fabAlignmentMode="center"
+            app:fabAnimationMode="scale"
+            app:fabCradleMargin="6dp"
+            app:fabCradleRoundedCornerRadius="16dp"
+            app:elevation="16dp"
+            app:fabCradleVerticalOffset="6dp"
+            app:hideOnScroll="true"
+            app:menu="@menu/bottom_bar_menu"
+            app:navigationIcon="@drawable/ic_list"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@id/bottomAppBar"
+            android:src="@drawable/ic_add" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
