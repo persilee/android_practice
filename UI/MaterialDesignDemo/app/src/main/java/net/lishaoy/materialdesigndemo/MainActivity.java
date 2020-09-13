@@ -1,6 +1,7 @@
 package net.lishaoy.materialdesigndemo;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -13,6 +14,7 @@ import android.widget.Toast;
 
 import net.lishaoy.materialdesigndemo.adapter.NavRecyclerViewAdapter;
 import net.lishaoy.materialdesigndemo.appbars.BottomAppBarActivity;
+import net.lishaoy.materialdesigndemo.appbars.TopAppBarActivity;
 import net.lishaoy.materialdesigndemo.bean.NavListItem;
 
 import java.util.ArrayList;
@@ -32,9 +34,12 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.nav_list);
 
         final List<NavListItem> navListItems = new ArrayList<>();
-        navListItem = new NavListItem(R.drawable.ic_list, "Bottom app bar", BottomAppBarActivity.class);
+        navListItem = new NavListItem(R.drawable.ic_calendar, "Bottom App Bar", BottomAppBarActivity.class);
+        navListItems.add(navListItem);
+        navListItem = new NavListItem(R.drawable.ic_crop, "Top App Bar", TopAppBarActivity.class);
         navListItems.add(navListItem);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new NavRecyclerViewAdapter(this, navListItems));
+        recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
     }
 }
