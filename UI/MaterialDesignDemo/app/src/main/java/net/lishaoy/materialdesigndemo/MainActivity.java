@@ -5,17 +5,13 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.ListView;
-import android.widget.Toast;
 
+import net.lishaoy.materialdesigndemo.activity.button.ButtonActivity;
 import net.lishaoy.materialdesigndemo.adapter.NavRecyclerViewAdapter;
-import net.lishaoy.materialdesigndemo.appbars.BottomAppBarActivity;
-import net.lishaoy.materialdesigndemo.appbars.BottomNavActivity;
-import net.lishaoy.materialdesigndemo.appbars.TopAppBarActivity;
+import net.lishaoy.materialdesigndemo.activity.appbars.BottomAppBarActivity;
+import net.lishaoy.materialdesigndemo.activity.navigation.BottomNavActivity;
+import net.lishaoy.materialdesigndemo.activity.appbars.TopAppBarActivity;
 import net.lishaoy.materialdesigndemo.bean.NavListItem;
 
 import java.util.ArrayList;
@@ -40,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         navListItem = new NavListItem(R.drawable.ic_crop, "Top App Bar", TopAppBarActivity.class);
         navListItems.add(navListItem);
         navListItem = new NavListItem(R.drawable.ic_input, "Bottom Navigation", BottomNavActivity.class);
+        navListItems.add(navListItem);
+        navListItem = new NavListItem(R.drawable.ic_chart, "Button", ButtonActivity.class);
         navListItems.add(navListItem);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new NavRecyclerViewAdapter(this, navListItems));

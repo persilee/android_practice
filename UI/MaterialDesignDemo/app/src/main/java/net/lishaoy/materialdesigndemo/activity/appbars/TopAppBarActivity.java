@@ -1,4 +1,4 @@
-package net.lishaoy.materialdesigndemo.appbars;
+package net.lishaoy.materialdesigndemo.activity.appbars;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -10,47 +10,49 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import com.google.android.material.bottomappbar.BottomAppBar;
+import com.google.android.material.appbar.MaterialToolbar;
 
 import net.lishaoy.materialdesigndemo.R;
 import net.lishaoy.materialdesigndemo.adapter.AppBarRecyclerAdapter;
 
-public class BottomAppBarActivity extends AppCompatActivity {
+public class TopAppBarActivity extends AppCompatActivity {
 
-    private BottomAppBar bottomAppBar;
+    private MaterialToolbar topAppBar;
     private RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bottom_app_bar);
-
+        setContentView(R.layout.activity_top_app_bar);
         getSupportActionBar().hide();
 
-        bottomAppBar = findViewById(R.id.bottomAppBar);
-        bottomAppBar.setNavigationOnClickListener(new View.OnClickListener() {
+        topAppBar = findViewById(R.id.top_app_bar);
+        topAppBar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(BottomAppBarActivity.this, "bottom bar menu", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TopAppBarActivity.this, "top bar menu", Toast.LENGTH_SHORT).show();
             }
         });
 
-        bottomAppBar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+        topAppBar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
+                    case R.id.favorite:
+                        Toast.makeText(TopAppBarActivity.this, "favorite", Toast.LENGTH_SHORT).show();
+                        break;
                     case R.id.search:
-                        Toast.makeText(BottomAppBarActivity.this, "search", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(TopAppBarActivity.this, "search", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.more:
-                        Toast.makeText(BottomAppBarActivity.this, "more", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(TopAppBarActivity.this, "more", Toast.LENGTH_SHORT).show();
                         break;
                 }
                 return false;
             }
         });
 
-        recyclerView = findViewById(R.id.bottom_recycler_view);
+        recyclerView = findViewById(R.id.top_bar_recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new AppBarRecyclerAdapter(this));
     }

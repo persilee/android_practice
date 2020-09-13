@@ -1,11 +1,9 @@
-package net.lishaoy.materialdesigndemo.appbars;
+package net.lishaoy.materialdesigndemo.activity.navigation;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager2.widget.CompositePageTransformer;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
@@ -14,7 +12,6 @@ import android.view.View;
 
 import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationView;
 
 import net.lishaoy.materialdesigndemo.R;
 import net.lishaoy.materialdesigndemo.adapter.ViewPagerAdapter;

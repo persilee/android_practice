@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".appbars.BottomNavActivity"></activity>
-        <activity android:name=".appbars.TopAppBarActivity" />
-        <activity android:name=".appbars.BottomAppBarActivity" />
+        <activity android:name=".activity.button.ButtonActivity"></activity>
+        <activity android:name=".activity.navigation.BottomNavActivity" />
+        <activity android:name=".activity.appbars.TopAppBarActivity" />
+        <activity android:name=".activity.appbars.BottomAppBarActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
