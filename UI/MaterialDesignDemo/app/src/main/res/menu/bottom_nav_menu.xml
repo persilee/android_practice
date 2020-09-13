@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="home" />
+
+    <item android:id="@+id/lic"
+        android:enabled="true"
+        android:icon="@drawable/ic_public"
+        android:title="lic" />
+
+
+    <item android:id="@+id/favorite"
+        android:enabled="true"
+        android:icon="@drawable/ic_favorite"
+        android:title="favorite" />
+
+    <item android:id="@+id/my"
+        android:enabled="true"
+        android:icon="@drawable/ic_face"
+        android:title="home" />
+
+</menu>
