@@ -2,4 +2,6 @@
     <string name="app_name">MaterialDesignDemo</string>
     <string name="search">search</string>
     <string name="more">more</string>
+    <string name="page_title">Top App Bar</string>
+    <string name="favorite">favorite</string>
 </resources>

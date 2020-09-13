@@ -14,24 +14,24 @@ import net.lishaoy.materialdesigndemo.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BottomAppBarRecyclerAdapter extends RecyclerView.Adapter<BottomAppBarRecyclerAdapter.BottomViewHolder> {
+public class AppBarRecyclerAdapter extends RecyclerView.Adapter<AppBarRecyclerAdapter.BottomViewHolder> {
 
     Context context;
     List<Integer> lists = new ArrayList<>();
 
-    public BottomAppBarRecyclerAdapter(Context context) {
+    public AppBarRecyclerAdapter(Context context) {
         this.context = context;
         this.lists = getLists();
     }
 
     @NonNull
     @Override
-    public BottomAppBarRecyclerAdapter.BottomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public AppBarRecyclerAdapter.BottomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new BottomViewHolder(LayoutInflater.from(context).inflate(R.layout.bottom_bar_item, parent, false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull BottomAppBarRecyclerAdapter.BottomViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull AppBarRecyclerAdapter.BottomViewHolder holder, int position) {
         holder.textView.setText(lists.get(position).toString());
     }
 

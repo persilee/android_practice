@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.google.android.material.bottomappbar.BottomAppBar;
 
 import net.lishaoy.materialdesigndemo.R;
-import net.lishaoy.materialdesigndemo.adapter.BottomAppBarRecyclerAdapter;
+import net.lishaoy.materialdesigndemo.adapter.AppBarRecyclerAdapter;
 
 public class BottomAppBarActivity extends AppCompatActivity {
 
@@ -52,6 +52,6 @@ public class BottomAppBarActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.bottom_recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new BottomAppBarRecyclerAdapter(this));
+        recyclerView.setAdapter(new AppBarRecyclerAdapter(this));
     }
 }
