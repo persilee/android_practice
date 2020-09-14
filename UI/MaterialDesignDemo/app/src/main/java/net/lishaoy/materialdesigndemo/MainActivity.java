@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import net.lishaoy.materialdesigndemo.activity.button.ButtonActivity;
+import net.lishaoy.materialdesigndemo.activity.button.FloatingActionButtonActivity;
 import net.lishaoy.materialdesigndemo.adapter.NavRecyclerViewAdapter;
 import net.lishaoy.materialdesigndemo.activity.appbars.BottomAppBarActivity;
 import net.lishaoy.materialdesigndemo.activity.navigation.BottomNavActivity;
@@ -38,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         navListItem = new NavListItem(R.drawable.ic_input, "Bottom Navigation", BottomNavActivity.class);
         navListItems.add(navListItem);
         navListItem = new NavListItem(R.drawable.ic_chart, "Button", ButtonActivity.class);
+        navListItems.add(navListItem);
+        navListItem = new NavListItem(R.drawable.ic_golf, "Floating Action Button", FloatingActionButtonActivity.class);
         navListItems.add(navListItem);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new NavRecyclerViewAdapter(this, navListItems));
