@@ -5,6 +5,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="textAppearanceButton">@style/TextAppearance.App.Button</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
     </style>
 
     <style name="AppBarPopupTheme" parent="ThemeOverlay.AppCompat.Light">
@@ -14,6 +16,26 @@
 
     <style name="OverflowPopupMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
         <item name="overlapAnchor">false</item>
+    </style>
+
+    <style name="Widget.App.Button.OutlinedButton.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">6dp</item>
     </style>
 
 </resources>
