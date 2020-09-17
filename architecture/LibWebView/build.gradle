@@ -22,3 +22,12 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    compileSdkVersion = 30
+    buildToolsVersion = "30.0.0"
+    minSdkVersion = 19
+    targetSdkVersion = 30
+    appcompat = "1.2.0"
+    googleAutoServiceDependency = 'com.google.auto.service:auto-service:1.0-rc7'
+}

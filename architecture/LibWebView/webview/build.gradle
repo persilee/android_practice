@@ -1,15 +1,16 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
     buildToolsVersion rootProject.buildToolsVersion
 
     defaultConfig {
-        applicationId "net.lishaoy.libwebview"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
         versionCode 1
         versionName "1.0"
+
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -26,8 +27,7 @@ android {
 
 dependencies {
 
-    implementation "androidx.appcompat:appcompat:$rootProject.appcompat"
-    implementation 'com.google.android.material:material:1.2.1'
-    implementation project(":webview")
+    compileOnly "androidx.appcompat:appcompat:$rootProject.appcompat"
+    compileOnly 'com.google.android.material:material:1.2.1'
 
 }

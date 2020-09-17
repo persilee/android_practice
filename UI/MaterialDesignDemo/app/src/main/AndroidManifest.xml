@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.card.CardActivity"></activity>
+        <activity android:name=".activity.chip.ChipActivity"></activity>
+        <activity android:name=".activity.card.CardActivity" />
         <activity android:name=".activity.button.FloatingActionButtonActivity" />
         <activity android:name=".activity.button.ButtonActivity" />
         <activity android:name=".activity.navigation.BottomNavActivity" />
