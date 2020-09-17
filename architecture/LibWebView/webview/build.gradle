@@ -27,7 +27,7 @@ android {
 
 dependencies {
 
-    compileOnly "androidx.appcompat:appcompat:$rootProject.appcompat"
+    implementation "androidx.appcompat:appcompat:$rootProject.appcompat"
     compileOnly 'com.google.android.material:material:1.2.1'
     annotationProcessor rootProject.googleAutoServiceDependency
     implementation rootProject.googleAutoServiceDependency

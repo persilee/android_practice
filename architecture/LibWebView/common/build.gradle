@@ -27,6 +27,6 @@ android {
 
 dependencies {
 
-    compileOnly "androidx.appcompat:appcompat:$rootProject.appcompat"
+    implementation "androidx.appcompat:appcompat:$rootProject.appcompat"
     api project(":base")
 }
